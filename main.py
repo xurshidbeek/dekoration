@@ -7,9 +7,9 @@ import time
 class Range:
     def __init__(self, start, stop=None, step=1):
         if stop is None:
-            self.stop = start   # stop = 10
+            self.stop = start  # stop = 10
             self.start = -step  # start = -1
-            self.step = step    # step = 1
+            self.step = step  # step = 1
         else:
             self.start = start - step
             self.stop = stop
@@ -38,6 +38,8 @@ class Range:
             return self.start
 
 
-
 for i in Range(2, 25, 2.5):
     print(i)
+
+if "__main__" == "__name__":
+    print()
